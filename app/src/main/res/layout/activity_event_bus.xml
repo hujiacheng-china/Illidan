@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".commonframe.eventbus.EventBusActivity">
+
+    <include layout="@layout/layout_title"/>
+    <Button
+        android:id="@+id/btn_eventbus_send"
+        android:text="跳转到发送页面"
+        style="@style/Btn_Normal_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_eventbus_sticky"
+        android:text="发送粘性事件跳转到发送页面"
+        android:layout_width="match_parent"
+        style="@style/Btn_Normal_Style"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_eventbus_result"
+        android:text="接收显示的结果"
+        style="@style/Btn_Normal_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

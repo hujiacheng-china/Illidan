@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.hujiacheng"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['./libs/jni']
+        }
+    }
+}
+
+//EventBus索引加速
+apply plugin: 'com.neenbedankt.android-apt'
+apt {
+    arguments {
+        eventBusIndex "com.hujiacheng.MyEventBusIndex"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.networkbench.newlens.agent.android:nbs.newlens.agent:2.4.4'
+    compile project(':okhttputils')
+    //OkhttpUtils
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    //V7包
+    testCompile 'junit:junit:4.12'
+    //单元测试
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    //Recyclerview
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //ImageLoader图片加载
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //注解
+    compile 'com.google.code.gson:gson:2.8.0'
+    //gson解析
+    compile 'com.github.Aspsine:swipetoloadlayout:1.0.4'
+    //滑动加载刷新框架
+    compile 'com.youth.banner:banner:1.4.9'
+    //Banner
+    compile 'com.facebook.fresco:fresco:1.1.0'
+    //Fresco图片加载框架
+    compile 'com.facebook.fresco:animated-gif:1.1.0'
+    //Fresco图片Gif加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //Glide图片加载框架
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    //Glide图片加载框架网络支持库
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //EventBus
+    apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+    //EventBus索引加速
+    compile 'fm.jiecao:jiecaovideoplayer:5.5.2'
+    //JieCaoVideoPlayer
+    compile 'com.linsea:opendanmaku:1.0.0@aar'
+    //OpenDanmaku弹幕
+    compile files('libs/isoparser-1.0.1.jar')
+    compile files('libs/aspectjrt.jar')
+}
+

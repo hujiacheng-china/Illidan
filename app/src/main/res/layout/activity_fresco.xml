@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fresco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".commonframe.fresco.FrescoActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_with_progress"
+                android:text="带进度的图片"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_cut"
+                android:text="图片的不同裁剪"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_circular"
+                android:text="圆形和圆角图片"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_gradual"
+                android:text="渐进式展示图片"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_gif"
+                android:text="GIF动画自动播放"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_plural"
+                android:text="多图请求及图片复用"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_listener"
+                android:text="图片加载监听"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_rotate"
+                android:text="图片旋转和缩放"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_change"
+                android:text="修改图片"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_with_dynamic"
+                android:text="动态展示图片"
+                style="@style/Btn_Normal_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

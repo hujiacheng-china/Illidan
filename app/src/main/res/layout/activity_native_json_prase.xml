@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <Button
+        android:id="@+id/btn_native_tojavaobject"
+        android:text="将JSON对象转换为Java对象"
+        style="@style/Btn_Orange_Style"/>
+    <Button
+        android:id="@+id/btn_native_tojavalist"
+        android:text="将JSON对象转换为Java集合"
+        style="@style/Btn_Orange_Style" />
+    <Button
+        android:id="@+id/btn_native_complex"
+        android:text="复杂JSON数据解析By GSON"
+        style="@style/Btn_Orange_Style"/>
+    <Button
+        android:id="@+id/btn_native_special"
+        android:text="特殊JSON数据解析 By GSON"
+        style="@style/Btn_Orange_Style"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_margin="3dp"
+                android:text="原始数据"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_native_orignal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="3dp"
+                android:text="转化后的数据"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_native_last"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

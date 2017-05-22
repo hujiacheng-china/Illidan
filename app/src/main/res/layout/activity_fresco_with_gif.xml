@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".commonframe.fresco.activity.FrescoWithCutActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_fresco"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        fresco:placeholderImage="@drawable/my_background1" />
+
+    <Button
+        android:id="@+id/btn_getgif"
+        style="@style/Btn_Normal_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请求Gif" />
+
+    <Button
+        android:id="@+id/btn_startgif"
+        style="@style/Btn_Normal_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始Gif" />
+
+    <Button
+        android:id="@+id/btn_stopgif"
+        style="@style/Btn_Normal_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止Gif" />
+
+</LinearLayout>

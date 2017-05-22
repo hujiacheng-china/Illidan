@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:text="添加"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            style="@style/Btn_Orange_Style"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:text="删除"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            style="@style/Btn_Orange_Style" />
+        <Button
+            android:id="@+id/btn_list"
+            android:text="List"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            style="@style/Btn_Orange_Style" />
+        <Button
+            android:id="@+id/btn_grid"
+            android:text="Grid"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            style="@style/Btn_Orange_Style" />
+        <Button
+            android:id="@+id/btn_flow"
+            android:text="Flow"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            style="@style/Btn_Orange_Style"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        tools:listitem="@layout/item_recyclerview"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

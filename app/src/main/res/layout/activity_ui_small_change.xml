@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="18dp"
+                android:text="带分享按钮播放界面" />
+
+            <com.hujiacheng.commonframe.jiecaovideoplayer.customview.JCVideoPlayerStandardShowShareButtonAfterFullscreen
+                android:id="@+id/custom_videoplayer_standard_with_share_button"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="18dp"
+                android:text="全屏后显示标标题" />
+
+            <com.hujiacheng.commonframe.jiecaovideoplayer.customview.JCVideoPlayerStandardShowTitleAfterFullscreen
+                android:id="@+id/custom_videoplayer_standard_show_title_after_fullscreen"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="18dp"
+                android:text="播放结束后显示纹理" />
+
+            <com.hujiacheng.commonframe.jiecaovideoplayer.customview.JCVideoPlayerStandardShowTextureViewAfterAutoComplete
+                android:id="@+id/custom_videoplayer_standard_show_textureview_aoto_complete"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="18dp"
+                android:text="全屏后显示UI" />
+
+            <com.hujiacheng.commonframe.jiecaovideoplayer.customview.JCVideoPlayerStandardAutoCompleteAfterFullscreen
+                android:id="@+id/custom_videoplayer_standard_aoto_complete"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="18dp"
+                android:text="1:1比例" />
+
+            <com.hujiacheng.commonframe.jiecaovideoplayer.customview.JCVideoPlayerStandardAutoCompleteAfterFullscreen
+                android:id="@+id/jc_videoplayer_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="18dp"
+                android:text="16:9比例" />
+
+            <com.hujiacheng.commonframe.jiecaovideoplayer.customview.JCVideoPlayerStandardAutoCompleteAfterFullscreen
+                android:id="@+id/jc_videoplayer_16_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

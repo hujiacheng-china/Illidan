@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <Button
+        android:id="@+id/btn_okhttp_get_post"
+        android:text="OkHttp GET/POST请求"
+        style="@style/Btn_Orange_Style"/>
+
+    <Button
+        android:id="@+id/btn_okhttputils_get_post"
+        android:text="OkHttp-Utils GET/POST请求"
+        style="@style/Btn_Orange_Style" />
+
+    <Button
+        android:id="@+id/btn_downloadfile"
+        android:text="使用 OkHttp-Utils 下载大文件"
+        style="@style/Btn_Orange_Style" />
+
+    <Button
+        android:id="@+id/btn_uploadfile"
+        android:text="使用 OkHttp-Utils 上传多个或者单个文件"
+        style="@style/Btn_Orange_Style"/>
+
+    <Button
+        android:id="@+id/btn_downloadimage"
+        android:text="使用 OkHttp-Utils 加载图片"
+        style="@style/Btn_Orange_Style"/>
+
+    <Button
+        android:id="@+id/btn_openlist"
+        android:text="打开 OkHttpList 页面"
+        style="@style/Btn_Orange_Style"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/pb_okhttp"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/iv_okhttp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_okhttp"
+                android:text="获取的数据"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

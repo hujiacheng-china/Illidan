@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hujiacheng">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="ANDROID.PERMISSION.CAPTURE_SECURE_VIDEO_OUTPUT"/>
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LauncherActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".commonframe.okhttp.OkHttpActivity" />
+        <activity android:name=".commonframe.okhttp.OkHttpListActivity" />
+        <activity android:name=".commonframe.butterknife.ButterKnifeActivity" />
+        <activity android:name=".commonframe.imageloader.ImageLoaderActivity" />
+        <activity android:name=".commonframe.recyclerView.RecyclerViewActivity" />
+        <activity android:name=".commonframe.jsonparse.JsonPraseActivity" />
+        <activity android:name=".commonframe.swipetoloadlayout.SwipeToLoadRecyclerViewActivity" />
+        <activity android:name=".commonframe.fresco.FrescoActivity" />
+        <activity android:name=".commonframe.fresco.activity.FrescoWithProgressActivity" />
+        <activity android:name=".commonframe.fresco.activity.FrescoWithCutActivity" />
+        <activity android:name=".commonframe.fresco.activity.FrescoWithCircularActivity" />
+        <activity android:name=".commonframe.fresco.activity.FrescoWithGifActivity" />
+        <activity android:name=".commonframe.fresco.activity.FrescoWithPluralActivity" />
+        <activity android:name=".commonframe.fresco.activity.FrescoWithListenerActivity" />
+        <activity android:name=".commonframe.eventbus.EventBusActivity" />
+        <activity android:name=".commonframe.eventbus.EventBusSendActivity" />
+        <activity android:name=".commonframe.eventbus.EventBusStickyActivity" />
+        <activity
+            android:name=".commonframe.jiecaovideoplayer.activity.JieCaoVideoPlayerMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".commonframe.jiecaovideoplayer.activity.ListViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar"/>
+        <activity
+            android:name=".commonframe.jiecaovideoplayer.activity.ListViewMultiHolderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar"/>
+        <activity
+            android:name=".commonframe.jiecaovideoplayer.activity.ListViewNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar"/>
+        <activity
+            android:name=".commonframe.jiecaovideoplayer.activity.ListViewViewpagerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar"/>
+        <activity
+            android:name=".commonframe.jiecaovideoplayer.activity.RecyclerViewNormalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar"/>
+        <activity
+            android:name=".commonframe.jiecaovideoplayer.activity.UISmallChangeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar"/>
+        <activity
+            android:name=".commonframe.jiecaovideoplayer.activity.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar"/>
+        <activity android:name=".commonframe.banner.activity.BannerMainActivity" />
+        <activity android:name=".commonframe.banner.activity.BannerAnimationActivity" />
+        <activity android:name=".commonframe.banner.activity.BannerStyleActivity" />
+        <activity android:name=".commonframe.banner.activity.CustomBannerActivity" />
+        <activity android:name=".commonframe.banner.activity.IndicatorPositionActivity" />
+        <activity android:name=".custom.youkumenu.YoukuMenuActivity" />
+        <activity android:name=".custom.setting.SettingsActivity" />
+        <activity android:name=".custom.zoomlist.ZoomListActivity" />
+        <activity android:name=".custom.dragbubble.DragBubbleActivity" />
+        <activity android:name=".other.jni.JNIActivity" />
+        <activity android:name=".other.jni.MtxxActivity" />
+        <activity android:name=".other.recordvideo.RecordVideoActivity"/>
+    </application>
+
+</manifest>

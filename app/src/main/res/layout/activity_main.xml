@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:background="#DBDBDB"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_common_frame"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            style="@style/RadioButton_MainBottom"
+            android:text="常用框架"
+            android:drawableTop="@drawable/rb_common_frame_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_thirdparty"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            style="@style/RadioButton_MainBottom"
+            android:text="第三方"
+            android:drawableTop="@drawable/rb_thirdparty_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_custom"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            style="@style/RadioButton_MainBottom"
+            android:text="自定义控件"
+            android:drawableTop="@drawable/rb_custom_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            style="@style/RadioButton_MainBottom"
+            android:text="其他"
+            android:drawableTop="@drawable/rb_other_selector" />
+
+    </RadioGroup>
+
+</LinearLayout>

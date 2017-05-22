@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".commonframe.fresco.activity.FrescoWithCutActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_fresco"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        fresco:placeholderImage="@drawable/my_background1" />
+
+    <Button
+        android:id="@+id/btn_preview"
+        style="@style/Btn_Normal_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="先显示低分辨率图，然后是高分辨率的图" />
+
+    <Button
+        android:id="@+id/btn_thumbnail"
+        style="@style/Btn_Normal_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地缩略图预览" />
+
+    <Button
+        android:id="@+id/btn_plural"
+        style="@style/Btn_Normal_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地图片复用" />
+
+</LinearLayout>

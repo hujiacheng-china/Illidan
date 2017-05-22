@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/bg_item_listview"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:src="@drawable/ic_history_selector"
+        android:layout_width="@dimen/spinner_item_height"
+        android:layout_height="@dimen/spinner_item_height" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:text="搜索历史"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spinner_item_height" />
+
+    <ImageView
+        android:id="@+id/iv_delect"
+        android:src="@drawable/ic_delete_selector"
+        android:layout_width="@dimen/spinner_item_height"
+        android:layout_height="@dimen/spinner_item_height" />
+
+
+</LinearLayout>

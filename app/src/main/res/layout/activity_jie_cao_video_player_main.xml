@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:text="基本的UI案例" />
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerSimple
+                android:id="@+id/simple_demo"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="推荐标准的UI案例" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                    android:id="@+id/jc_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <com.opendanmaku.DanmakuView
+                    android:id="@+id/opendanmu"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:end_Y_offset="0.8"
+                    app:max_row="5"
+                    app:max_running_per_row="2"
+                    app:pick_interval="800"
+                    app:show_debug="false"
+                    app:start_Y_offset="0.2"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_danmu"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="请在此处输入弹幕"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="发送"
+                    android:background="@drawable/btn_orange_selector"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tiny_window"
+                style="@style/Btn_Normal_Style"
+                android:text="小窗口播放视频" />
+
+            <Button
+                android:id="@+id/auto_tiny_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="Auto tiny window"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/play_directly_without_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="Play Directly Without Layout"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/about_listview"
+                style="@style/Btn_Normal_Style"
+                android:text="在列表中播放视频" />
+
+            <Button
+                android:id="@+id/about_ui"
+                style="@style/Btn_Normal_Style"
+                android:text="修改播放器UI案例" />
+
+            <Button
+                android:id="@+id/about_webview"
+                style="@style/Btn_Normal_Style"
+                android:text="在WebView中播放视频" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
